@@ -29,11 +29,6 @@ Options pada command, yang akan mempermudah kamu untuk membuat/menambahkan fitur
    isOwner: <Boolean>, // Ex: false
    isAdmin: <Boolean>, // Ex: false
    isQuoted: <Boolean>, // Ex: false
-   isQVideo: <Boolean>, // Ex: false
-   isQAudio: <Boolean>, // Ex: false
-   isQImage: <Boolean>, // Ex: false
-   isQSticker: <Boolean>, // Ex: false
-   isQDocument: <Boolean>, // Ex: false
    isGroup: <Boolean>, // Ex: false
    isBotAdmin: <Boolean>, // Ex: false
    query: <Boolean and String>, // Ex: "Tunggu Sebentar" / true
@@ -41,7 +36,15 @@ Options pada command, yang akan mempermudah kamu untuk membuat/menambahkan fitur
    isSpam: <Boolean>, // Ex: true
    isLimit: <Boolean>, // Ex: true
    isLimitGame: <Boolean>, // Ex: false
+   noPrefix: <Boolean>, // Ex: true
    isPremium: <Boolean>, // Ex: false
+   isMedia: { 
+      isQVideo: <Boolean>, // Ex: false
+      isQAudio: <Boolean>, // Ex: false
+      isQImage: <Boolean>, // Ex: false
+      isQSticker: <Boolean>, // Ex: false
+      isQDocument: <Boolean>, // Ex: false
+   }
    isUrl: <Boolean> // Ex: false
 }
 ```
@@ -71,6 +74,23 @@ Isi semua yang dibutuhkan di file [`config.json`](https://github.com/Rizky878/rz
 
 ## Request atau report bug
 Untuk request atau report bug bisa chat saya disini [Whatsapp](https://wa.me/6282387804410)
+
+## Instalasi On Termux
+
+### Clone Repo
+
+```bash
+> pkg install
+> pkg upgrade
+> pkg install git
+> pkg install ffmpeg && pkg install libwebp
+> pkg install nodejs
+> git clone https://github.com/Rizky878/rzky-multidevice/
+> cd rzky-multidevice
+> npm install --arch=x64 --platform=linux sharp
+> npm start
+# Scan QR
+```
 
 ## Instalasi
 
